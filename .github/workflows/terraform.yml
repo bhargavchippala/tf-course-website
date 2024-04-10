@@ -76,10 +76,10 @@ jobs:
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
-    #  run: terraform init
+      run: terraform init
     #- name: Terraform Init
       # the | on the next line is needed to run multiple commands
-      run: |
+    #  run: |
         terraform init
      #    terraform workspace new dev
         terraform workspace select dev
