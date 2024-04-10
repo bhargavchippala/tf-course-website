@@ -89,7 +89,8 @@ jobs:
      # run: terraform fmt
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan -input=false -var-file="dev.tfvars"
+      run: terraform plan -input=false -var-file="dev.tfvars" -out="website.plan"
+      #run: terraform plan -input=false -var-file="dev.tfvars"
      #- name: Terraform Plan
      # run: terraform plan -input=false -var-file="dev.tfvars"
       env:
